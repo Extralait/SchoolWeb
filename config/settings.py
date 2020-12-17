@@ -11,9 +11,9 @@ dotenv_file = os.path.join(BASE_DIR, ".env")
 SECRET_KEY = os.getenv('SECRET_KEY', 'Optional default value')
 
 # DEBUG = os.getenv('DEBUG')
-DEBUG=True
+DEBUG=False
 # ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS')
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['webschooluss.herokuapp.com/','127.0.0.1']
 
 INSTALLED_APPS = [
     'api',
