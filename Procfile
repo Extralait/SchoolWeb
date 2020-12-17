@@ -1,1 +1,1 @@
-web: gunicorn config.wsgi
+web: python SchoolWeb/manage.py runserver "0.0.0.0:$PORT"
