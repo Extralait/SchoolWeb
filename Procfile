@@ -1,1 +1,1 @@
-web: gunicorn config.settings.wsgi
+web: gunicorn yourdjangoweb.wsgi --log-file -
