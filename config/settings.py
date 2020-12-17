@@ -8,10 +8,13 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 # PROJECT_ROOT = os.path.join(os.path.abspath(__file__))
 
-STATIC_ROOT = os.path.normpath(os.path.join(BASE_DIR, 'staticfiles'))
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.normpath(os.path.join(BASE_DIR, '../staticfiles'))
 STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'static'),
+    os.path.join(BASE_DIR, '../static'),
 )
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
 
 dotenv_file = os.path.join(BASE_DIR, ".env")
 # if os.path.isfile(dotenv_file):
@@ -51,7 +54,6 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'config.urls'
 
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 TEMPLATES = [
     {
