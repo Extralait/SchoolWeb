@@ -13,7 +13,7 @@ SECRET_KEY = os.getenv('SECRET_KEY', 'Optional default value')
 # DEBUG = os.getenv('DEBUG')
 DEBUG=False
 # ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS')
-ALLOWED_HOSTS = ['webschooluss.herokuapp.com/','127.0.0.1']
+ALLOWED_HOSTS = ['*']
 
 INSTALLED_APPS = [
     'api',
