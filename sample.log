@@ -1,0 +1,29 @@
+INFO:root:/api/accounts/all-profiles
+WARNING:django.request:Bad Request: /auth/users/
+WARNING:django.request:Bad Request: /auth/jwt/create/
+WARNING:django.request:Bad Request: /auth/users/
+WARNING:django.request:Bad Request: /auth/jwt/create/
+WARNING:django.request:Bad Request: /auth/users/
+WARNING:django.request:Bad Request: /auth/jwt/create/
+WARNING:django.request:Bad Request: /auth/users/
+WARNING:django.request:Bad Request: /auth/jwt/create/
+INFO:root:/api/accounts/all-profiles
+WARNING:django.request:Bad Request: /auth/users/
+WARNING:django.request:Bad Request: /auth/jwt/create/
+WARNING:django.request:Bad Request: /auth/users/
+WARNING:django.request:Bad Request: /auth/jwt/create/
+WARNING:django.request:Bad Request: /auth/users/
+WARNING:django.request:Bad Request: /auth/jwt/create/
+WARNING:django.request:Bad Request: /auth/users/
+WARNING:django.request:Bad Request: /auth/jwt/create/
+INFO:root:<Response status_code=400, "application/json">
+WARNING:django.request:Bad Request: /auth/jwt/create/
+WARNING:django.request:Bad Request: /auth/users/
+INFO:root:<Response status_code=400, "application/json">
+WARNING:django.request:Bad Request: /auth/jwt/create/
+WARNING:django.request:Bad Request: /auth/users/
+INFO:root:<Response status_code=400, "application/json">
+WARNING:django.request:Bad Request: /auth/jwt/create/
+WARNING:django.request:Bad Request: /auth/users/
+INFO:root:<Response status_code=400, "application/json">
+WARNING:django.request:Bad Request: /auth/jwt/create/
