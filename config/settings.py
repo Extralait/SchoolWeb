@@ -7,7 +7,7 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
-# PROJECT_ROOT = os.path.join(os.path.abspath(__file__))
+PROJECT_ROOT = os.path.join(os.path.abspath(__file__))
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.normpath(os.path.join(BASE_DIR, '../staticfiles'))
@@ -25,7 +25,7 @@ SECRET_KEY = os.getenv('SECRET_KEY', 'Optional default value')
 # DEBUG = os.getenv('DEBUG')
 DEBUG = False
 # ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS')
-ALLOWED_HOSTS = ['secondtryschoolweb.herokuapp.com','127.0.0.1']
+ALLOWED_HOSTS = ['secondtryschoolweb.herokuapp.com/','127.0.0.1/']
 
 INSTALLED_APPS = [
     'api',
