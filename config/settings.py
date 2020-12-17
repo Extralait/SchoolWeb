@@ -1,6 +1,7 @@
 import os
 from pathlib import Path
 import djoser
+import django_heroku
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
@@ -21,7 +22,6 @@ dotenv_file = os.path.join(BASE_DIR, ".env")
 #     dotenv.load_dotenv(dotenv_file)
 
 SECRET_KEY = os.getenv('SECRET_KEY', 'Optional default value')
-
 # DEBUG = os.getenv('DEBUG')
 DEBUG = False
 # ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS')
@@ -119,3 +119,5 @@ REST_FRAMEWORK = {
 import dj_database_url
 prod_db  =  dj_database_url.config(conn_max_age=500)
 DATABASES['default'].update(prod_db)
+
+django_heroku.settings(locals())
