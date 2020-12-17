@@ -1,1 +1,1 @@
-worker: python manage.py runserver schoolWeb
+worker: python manage.py runserver
