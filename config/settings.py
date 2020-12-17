@@ -22,7 +22,7 @@ SECRET_KEY = os.getenv('SECRET_KEY', 'Optional default value')
 # DEBUG = os.getenv('DEBUG')
 DEBUG = False
 # ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS')
-ALLOWED_HOSTS = ['https://webschooluss.herokuapp.com/']
+ALLOWED_HOSTS = ['https://secondtryschoolweb.herokuapp.com/','127.0.0.1']
 
 INSTALLED_APPS = [
     'api',
@@ -35,7 +35,7 @@ INSTALLED_APPS = [
     'djoser',
     'rest_framework',
     'rest_framework_simplejwt',
-    # 'rest_framework.authtoken',
+    'rest_framework.authtoken',
 ]
 
 MIDDLEWARE = [
