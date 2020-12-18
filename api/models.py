@@ -85,9 +85,9 @@ class Organization(models.Model):
     score = models.TextField('Баллы прошлых лет', blank=True, null=True)
     min_score = models.TextField('Минимальные баллы', blank=True, null=True)
     disciplines_list = models.TextField('Список дисциплин', blank=True, null=True)
-    best_students = models.TextField('Список дисциплин', blank=True, null=True)
-    offer = models.ForeignKey('self', verbose_name='Предложение', on_delete=models.SET_NULL, null=True)
-    event = models.ForeignKey(Event, verbose_name='Вебинар', on_delete=models.SET_NULL, null=True)
+    best_students = models.TextField('Лучшие студенты', blank=True, null=True)
+    offer = models.ForeignKey('self', verbose_name='Предложение', on_delete=models.SET_NULL, null=True, blank=True)
+    event = models.ForeignKey(Event, verbose_name='Вебинар', on_delete=models.SET_NULL, null=True, blank=True)
 
     class Meta:
         verbose_name = 'Направлени'
