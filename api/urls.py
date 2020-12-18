@@ -4,8 +4,8 @@ from rest_framework import routers
 from .views import EventViewSet, OrganizationViewSet, CustomAuthToken
 
 router = routers.DefaultRouter()
-router.register(r'events', EventViewSet)
-router.register(r'specialty', OrganizationViewSet)
+router.register(r'events', EventViewSet,basename='event')
+router.register(r'specialty', OrganizationViewSet,basename='specialty')
 
 
 from django.urls import include, path

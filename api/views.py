@@ -40,9 +40,6 @@ class userProfileDetailView(RetrieveUpdateDestroyAPIView):
     serializer_class=UserProfileSerializer
     permission_classes=[IsOwnerProfileOrReadOnly,IsAuthenticated]
 
-
-
-
 class CustomAuthToken(ObtainAuthToken):
     serializer_class = CustomAuthTokenSerializer
 

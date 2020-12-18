@@ -9,5 +9,5 @@ urlpatterns = [
     path('auth/', include('djoser.urls.jwt')),
 
     # path to our account's app endpoints
-    path("api/accounts/", include("api.urls"))
+    path("api/", include("api.urls"))
 ]
