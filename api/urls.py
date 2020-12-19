@@ -5,7 +5,7 @@ from .views import EventViewSet, OrganizationViewSet, CustomAuthToken
 
 router = routers.DefaultRouter()
 router.register(r'events', EventViewSet,basename='event')
-router.register(r'specialty', OrganizationViewSet,basename='specialty')
+router.register(r'organisations', OrganizationViewSet,basename='organisation')
 
 
 from django.urls import include, path
