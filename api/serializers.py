@@ -20,12 +20,17 @@ class EventSerializer(serializers.ModelSerializer):
         fields = '__all__'
 
 
+class SubOrganizationSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Organization
+        fields = ('id','name','USE','place','price')
+
 class OrganizationSerializer(serializers.ModelSerializer):
+    section1=SubOrganizationSerializer()
+    section2=EventSerializer()
     class Meta:
         model = Organization
         fields = '__all__'
-
-
 
 # Custom Token Serializer for logging in with email instead of username
 class CustomAuthTokenSerializer(AuthTokenSerializer):
