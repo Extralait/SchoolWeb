@@ -31,4 +31,5 @@ class CustomUserAdmin(UserAdmin):
             'fields': ('email','full_name','status','SNILS','password1', 'password2', 'is_staff','is_superuser')}
         ),
     )
-    search_fields = ('email','full_name',)
+    search_fields = ('email',)
+    ordering = ('email',)
