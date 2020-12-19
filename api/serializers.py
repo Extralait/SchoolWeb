@@ -3,7 +3,7 @@ from rest_framework import serializers
 from rest_framework.authtoken.serializers import AuthTokenSerializer
 from django.utils.translation import gettext_lazy as _
 
-from .models import Event, Organization, userProfile
+from .models import Event, Organization, userProfile, Work, Internship, Practice, BestStudent
 
 
 class UserProfileSerializer(serializers.ModelSerializer):
@@ -19,15 +19,28 @@ class EventSerializer(serializers.ModelSerializer):
         model = Event
         fields = '__all__'
 
-
-class SubOrganizationSerializer(serializers.ModelSerializer):
+class BestStudentSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Organization
-        fields = ('id','name','USE','place','price')
+        model = BestStudent
+        fields = '__all__'
+
+class PracticeSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Practice
+        fields = '__all__'
+
+class InternshipSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Internship
+        fields = '__all__'
+
+class WorkSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Work
+        fields = '__all__'
+
 
 class OrganizationSerializer(serializers.ModelSerializer):
-    # section1=SubOrganizationSerializer()
-    # section2=EventSerializer()
     class Meta:
         model = Organization
         depth=1

@@ -1,16 +1,18 @@
 from django.contrib import admin
 from django.urls import path, include
 from rest_framework import routers
-from .views import EventViewSet, OrganizationViewSet, CustomAuthToken
+from .views import EventViewSet, OrganizationViewSet, CustomAuthToken, BestStudentViewSet, PracticeViewSet, \
+    InternshipViewSet, WorkViewSet
+from django.urls import include, path
+from .views import UserProfileListCreateView, userProfileDetailView
 
 router = routers.DefaultRouter()
 router.register(r'events', EventViewSet,basename='event')
 router.register(r'organisations', OrganizationViewSet,basename='organisation')
-
-
-from django.urls import include, path
-
-from .views import UserProfileListCreateView, userProfileDetailView
+router.register(r'beststudents', BestStudentViewSet,basename='beststudent')
+router.register(r'practices', PracticeViewSet,basename='practice')
+router.register(r'internships', InternshipViewSet,basename='internship')
+router.register(r'works', WorkViewSet,basename='work')
 
 urlpatterns = [
     path("", include(router.urls)),

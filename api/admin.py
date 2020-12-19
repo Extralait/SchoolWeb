@@ -5,10 +5,15 @@ from django.contrib import admin
 from django.contrib.auth.admin import UserAdmin as DjangoUserAdmin, UserAdmin
 
 from .forms import CustomUserCreationForm, CustomUserChangeForm
-from .models import Event, Organization, userProfile
+from .models import Event, Organization, userProfile,BestStudent,Practice,Internship,Work
 
 admin.site.register(Event)
 admin.site.register(Organization)
+admin.site.register(BestStudent)
+admin.site.register(Practice)
+admin.site.register(Internship)
+admin.site.register(Work)
+
 
 
 # Custom User admin with no username field
