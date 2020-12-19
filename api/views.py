@@ -27,7 +27,7 @@ class PracticeViewSet(viewsets.ModelViewSet):
 
 class InternshipViewSet(viewsets.ModelViewSet):
     queryset = Internship.objects.all()
-    serializer_class = OrganizationSerializer
+    serializer_class = InternshipSerializer
 
 class WorkViewSet(viewsets.ModelViewSet):
     queryset = Work.objects.all()
@@ -35,7 +35,7 @@ class WorkViewSet(viewsets.ModelViewSet):
 
 class OrganizationViewSet(viewsets.ModelViewSet):
     queryset = Organization.objects.all()
-    serializer_class = WorkSerializer
+    serializer_class = OrganizationSerializer
 
 
 class UserProfileListCreateView(ListCreateAPIView):
