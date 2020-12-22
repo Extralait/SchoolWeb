@@ -123,7 +123,6 @@ class Organization(models.Model):
     name = models.CharField('Название направления', max_length=200)
     school = models.CharField('Школа', blank=True, null=True, max_length=80)
     number = models.CharField('Код направления', blank=True, null=True,max_length=20)
-    USE = models.TextField('ЕГЭ', blank=True, null=True)
     work = models.ManyToManyField(Work,verbose_name='Трудоустройства', blank=True)
     practice = models.ManyToManyField(Practice,verbose_name='Практики', blank=True)
     internship = models.ManyToManyField(Internship,verbose_name='Стажировки', blank=True)
