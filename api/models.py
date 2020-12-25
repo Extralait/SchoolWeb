@@ -62,9 +62,8 @@ class userProfile(AbstractUser):
 
 class Event(models.Model):
     organizer = models.CharField("Организатор", max_length=60)
-    date = models.DateField('Дата проведения')
     time = models.DateTimeField('Время' ,null=True,blank=True)
-    link = models.SlugField('Ссылка', unique=True)
+    link = models.CharField('Ссылка', unique=True, db_index=True, max_length=200)
 
     class Meta:
         verbose_name = 'Мероприятие'
