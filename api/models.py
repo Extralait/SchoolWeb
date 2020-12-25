@@ -63,6 +63,7 @@ class userProfile(AbstractUser):
 class Event(models.Model):
     organizer = models.CharField("Организатор", max_length=60)
     date = models.DateField('Дата проведения')
+    time = models.DateTimeField('Время' ,null=True,blank=True)
     link = models.SlugField('Ссылка', unique=True)
 
     class Meta:
@@ -128,7 +129,7 @@ class Organization(models.Model):
     internship = models.ManyToManyField(Internship,verbose_name='Стажировки', blank=True)
     place = models.IntegerField('Бюджетных мест', blank=True, null=True)
     price = models.IntegerField('Цена обучения', blank=True, null=True)
-    min_score = models.TextField('Прочее json', blank=True, null=True)
+    jsons = models.TextField('Прочее json', blank=True, null=True)
     best_students = models.ManyToManyField(BestStudent,verbose_name='Лучшие студенты', blank=True)
     offer = models.ManyToManyField('self', verbose_name='Предложение', blank=True)
     event = models.ForeignKey(Event, verbose_name='Вебинар', on_delete=models.SET_NULL, null=True, blank=True)
