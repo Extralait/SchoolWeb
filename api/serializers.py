@@ -3,7 +3,7 @@ from rest_framework import serializers
 from rest_framework.authtoken.serializers import AuthTokenSerializer
 from django.utils.translation import gettext_lazy as _
 
-from .models import Event, Organization, userProfile, Work, Internship, Practice, BestStudent
+from .models import Event, Organization, userProfile, Work, Internship, Practice, BestStudent, Achievements
 
 
 class UserProfileSerializer(serializers.ModelSerializer):
@@ -44,6 +44,11 @@ class OrganizationSerializer(serializers.ModelSerializer):
     class Meta:
         model = Organization
         depth=1
+        fields = '__all__'
+
+class AchievementsSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Achievements
         fields = '__all__'
 
 # Custom Token Serializer for logging in with email instead of username

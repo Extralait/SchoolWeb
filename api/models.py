@@ -60,6 +60,8 @@ class userProfile(AbstractUser):
     def __str__(self):
         return self.full_name
 
+
+
 class Event(models.Model):
     organizer = models.CharField("Организатор", max_length=60)
     time = models.DateTimeField('Время' ,null=True,blank=True)
@@ -71,6 +73,17 @@ class Event(models.Model):
 
     def __str__(self):
         return self.organizer
+
+class Achievements(models.Model):
+    text = models.TextField("Текст", max_length=60)
+    photo = models.ImageField('Фото',blank=True, null=True)
+
+    class Meta:
+        verbose_name = 'Достижение'
+        verbose_name_plural = 'Достижения'
+
+    def __str__(self):
+        return self.text
 
 class BestStudent(models.Model):
     avatar = models.ImageField('Аватар',blank=True, null=True)

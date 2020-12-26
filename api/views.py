@@ -4,10 +4,10 @@ from rest_framework.compat import coreapi, coreschema
 from rest_framework.schemas import coreapi as coreapi_schema
 from rest_framework.schemas import ManualSchema
 from .serializers import EventSerializer, OrganizationSerializer, CustomAuthTokenSerializer, BestStudentSerializer, \
-    PracticeSerializer, InternshipSerializer, WorkSerializer
+    PracticeSerializer, InternshipSerializer, WorkSerializer, AchievementsSerializer
 from rest_framework.generics import (ListCreateAPIView,RetrieveUpdateDestroyAPIView,)
 from rest_framework.permissions import IsAuthenticated
-from .models import Event, Organization, userProfile,BestStudent,Practice,Internship,Work
+from .models import Event, Organization, userProfile, BestStudent, Practice, Internship, Work, Achievements
 from .permissions import IsOwnerProfileOrReadOnly
 from .serializers import UserProfileSerializer
 
@@ -31,7 +31,11 @@ class InternshipViewSet(viewsets.ModelViewSet):
 
 class WorkViewSet(viewsets.ModelViewSet):
     queryset = Work.objects.all()
-    serializer_class = InternshipSerializer
+    serializer_class = WorkSerializer
+
+class AchievementsViewSet(viewsets.ModelViewSet):
+    queryset = Achievements.objects.all()
+    serializer_class = AchievementsSerializer
 
 class OrganizationViewSet(viewsets.ModelViewSet):
     queryset = Organization.objects.all()
