@@ -75,7 +75,7 @@ class Event(models.Model):
         return self.organizer
 
 class Achievements(models.Model):
-    text = models.TextField("Текст", max_length=60)
+    text = models.TextField("Текст")
     photo = models.ImageField('Фото',blank=True, null=True)
 
     class Meta:
