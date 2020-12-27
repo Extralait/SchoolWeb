@@ -99,7 +99,7 @@ class OrganizationSerializer(serializers.ModelSerializer):
         fields = '__all__'
 
 class AchievementsSerializer(serializers.ModelSerializer):
-    image = Base64ImageField(
+    photo = Base64ImageField(
         max_length=None, use_url=True,
     )
     class Meta:
