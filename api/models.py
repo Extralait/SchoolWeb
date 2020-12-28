@@ -1,7 +1,22 @@
+from django.db import models
 from django.contrib.auth.base_user import BaseUserManager
 from django.contrib.auth.models import AbstractUser
 from django.db import models
 from django.utils.translation import ugettext_lazy as _
+
+
+class Event(models.Model):
+    speciality = models.CharField("Специальность", max_length=200 ,null=True,blank=True)
+    number = models.CharField("Номаер специальности", max_length=20,null=True,blank=True)
+    time = models.DateTimeField('Время' ,null=True,blank=True)
+    link = models.CharField('Ссылка', unique=True, db_index=True, max_length=200)
+
+    class Meta:
+        verbose_name = 'Мероприятие'
+        verbose_name_plural = 'Мероприятия'
+
+    def __str__(self):
+        return self.speciality
 
 
 class CustomUserManager(BaseUserManager):
@@ -9,6 +24,7 @@ class CustomUserManager(BaseUserManager):
     Custom user model manager where email is the unique identifiers
     for authentication instead of usernames.
     """
+
     def create_user(self, email, password, **extra_fields):
         """
         Create and save a User with the given email and password.
@@ -20,6 +36,7 @@ class CustomUserManager(BaseUserManager):
         user.set_password(password)
         user.save()
         return user
+
     def create_superuser(self, email, password, **extra_fields):
         """
         Create and save a SuperUser with the given email and password.
@@ -33,18 +50,18 @@ class CustomUserManager(BaseUserManager):
             raise ValueError(_('Superuser must have is_superuser=True.'))
         return self.create_user(email, password, **extra_fields)
 
-
-# Custom User Class
+    # Custom User Class
 class userProfile(AbstractUser):
     username = None
     first_name = None
     last_name = None
+
     class RoleChoices(models.TextChoices):
         PARENT = 'parent', 'Родитель'
         ENROLLEE = 'enrollee', 'Абитуриент'
 
     status = models.CharField('Статус', max_length=10, choices=RoleChoices.choices)
-    SNILS = models.IntegerField('СНИЛС',null=True)
+    SNILS = models.IntegerField('СНИЛС', null=True)
     full_name = models.CharField('ФИО', max_length=100)
     email = models.EmailField('Email', unique=True)
 
@@ -59,97 +76,3 @@ class userProfile(AbstractUser):
 
     def __str__(self):
         return self.full_name
-
-
-
-class Event(models.Model):
-    organizer = models.CharField("Организатор", max_length=60)
-    time = models.DateTimeField('Время' ,null=True,blank=True)
-    link = models.CharField('Ссылка', unique=True, db_index=True, max_length=200)
-
-    class Meta:
-        verbose_name = 'Мероприятие'
-        verbose_name_plural = 'Мероприятия'
-
-    def __str__(self):
-        return self.organizer
-
-class Achievements(models.Model):
-    text = models.TextField("Текст")
-    photo = models.ImageField('Фото',blank=True, null=True)
-
-    class Meta:
-        verbose_name = 'Достижение'
-        verbose_name_plural = 'Достижения'
-
-    def __str__(self):
-        return self.text
-
-class BestStudent(models.Model):
-    avatar = models.ImageField('Аватар',blank=True, null=True)
-    name = models.CharField('ФИО', max_length=60)
-    achievements = models.TextField('Достижения', blank=True, null=True)
-
-    class Meta:
-        verbose_name = 'Лучший студент'
-        verbose_name_plural = 'Лучшие студенты'
-    def __str__(self):
-        return self.name
-
-class Practice(models.Model):
-    logo = models.ImageField('Логотип', blank=True, null=True)
-    title = models.CharField('Название', max_length=60)
-    description = models.TextField('Описание', blank=True, null=True)
-    link = models.SlugField('Ссылка', unique=True)
-
-    class Meta:
-        verbose_name = 'Практика'
-        verbose_name_plural = 'Практики'
-    def __str__(self):
-        return self.title
-
-class Internship(models.Model):
-    logo = models.ImageField('Логотип', blank=True, null=True)
-    title = models.CharField('Название', max_length=60)
-    description = models.TextField('Описание', blank=True, null=True)
-    link = models.SlugField('Ссылка', unique=True)
-
-    class Meta:
-        verbose_name = 'Стажировка'
-        verbose_name_plural = 'Стажировки'
-    def __str__(self):
-        return self.title
-
-class Work(models.Model):
-    logo = models.ImageField('Логотип', blank=True, null=True)
-    title = models.CharField('Название', max_length=60)
-    description = models.TextField('Описание', blank=True, null=True)
-    link = models.SlugField('Ссылка', unique=True)
-
-    class Meta:
-        verbose_name = 'Трудоустройство'
-        verbose_name_plural = 'Трудоустройство'
-    def __str__(self):
-        return self.title
-
-class Organization(models.Model):
-    name = models.CharField('Название направления', max_length=200, unique=True)
-    school = models.CharField('Школа', blank=True, null=True, max_length=80)
-    number = models.CharField('Код направления', blank=True, null=True,max_length=20)
-    work = models.ManyToManyField(Work,verbose_name='Трудоустройства', blank=True)
-    practice = models.ManyToManyField(Practice,verbose_name='Практики', blank=True)
-    internship = models.ManyToManyField(Internship,verbose_name='Стажировки', blank=True)
-    place = models.IntegerField('Бюджетных мест', blank=True, null=True)
-    price = models.IntegerField('Цена обучения', blank=True, null=True)
-    jsons = models.TextField('Прочее json', blank=True, null=True)
-    best_students = models.ManyToManyField(BestStudent,verbose_name='Лучшие студенты', blank=True)
-    offer = models.ManyToManyField('self', verbose_name='Предложение', blank=True)
-    event = models.ForeignKey(Event, verbose_name='Вебинар', on_delete=models.SET_NULL, null=True, blank=True)
-    logo = models.ImageField('Логотип',blank=True, null=True)
-
-    class Meta:
-        verbose_name = 'Направление'
-        verbose_name_plural = 'Направления'
-
-    def __str__(self):
-        return self.name
