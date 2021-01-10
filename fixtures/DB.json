@@ -1,0 +1,2379 @@
+[
+  {
+    "model": "api.Organization",
+    "pk": 1,
+    "fields": {
+      "name": "Философия",
+      "school": "Школа искусств и гуманитарных наук",
+      "number": "47.03.01",
+      "place": 16,
+      "price": null,
+      "jsons": {
+        "subjects": [
+        ],
+        "work": [
+        ],
+        "practice": [
+        ],
+        "internship": [
+        ],
+        "passing_scores": [
+        ],
+        "main_disciplines": [
+        ],
+        "other": ""
+      },
+      "logo": "org_logo/1.png",
+      "event": null,
+      "best_students": [],
+      "offer": [],
+      "video_link": "",
+      "org_detail": "",
+      "plan": ""
+    }
+  },
+  {
+    "model": "api.Organization",
+    "pk": 2,
+    "fields": {
+      "name": "Филология (иностранные языки)",
+      "school": "Восточный институт — Школа региональных и международных исследований",
+      "number": "45.03.01",
+      "place": 14,
+      "price": null,
+      "jsons": {
+        "subjects": [
+        ],
+        "work": [
+        ],
+        "practice": [
+        ],
+        "internship": [
+        ],
+        "passing_scores": [
+        ],
+        "main_disciplines": [
+        ],
+        "other": ""
+      },
+      "logo": "org_logo/2.png",
+      "event": null,
+      "best_students": [],
+      "offer": [],
+      "video_link": "",
+      "org_detail": "",
+      "plan": ""
+    }
+  },
+  {
+    "model": "api.Organization",
+    "pk": 3,
+    "fields": {
+      "name": "Теология",
+      "school": "Школа искусств и гуманитарных наук",
+      "number": "48.03.01",
+      "place": 25,
+      "price": null,
+      "jsons": {
+        "subjects": [
+        ],
+        "work": [
+        ],
+        "practice": [
+        ],
+        "internship": [
+        ],
+        "passing_scores": [
+        ],
+        "main_disciplines": [
+        ],
+        "other": ""
+      },
+      "logo": "org_logo/3.png",
+      "event": null,
+      "best_students": [],
+      "offer": [],
+      "video_link": "",
+      "org_detail": "",
+      "plan": ""
+    }
+  },
+  {
+    "model": "api.Organization",
+    "pk": 4,
+    "fields": {
+      "name": "Педагогическое образование (с двумя профилями подготовки) (История и обществознание)",
+      "school": "Школа педагогики",
+      "number": "44.03.05",
+      "place": 20,
+      "price": null,
+      "jsons": {
+        "subjects": [
+        ],
+        "work": [
+        ],
+        "practice": [
+        ],
+        "internship": [
+        ],
+        "passing_scores": [
+        ],
+        "main_disciplines": [
+        ],
+        "other": ""
+      },
+      "logo": "org_logo/4.png",
+      "event": null,
+      "best_students": [],
+      "offer": [],
+      "video_link": "",
+      "org_detail": "",
+      "plan": ""
+    }
+  },
+  {
+    "model": "api.Organization",
+    "pk": 5,
+    "fields": {
+      "name": "Педагогическое образование (с двумя профилями подготовки) (Иностранный (английский) язык и иностранный (корейский) язык)",
+      "school": "Школа педагогики",
+      "number": "44.03.05",
+      "place": 20,
+      "price": null,
+      "jsons": {
+        "subjects": [
+        ],
+        "work": [
+        ],
+        "practice": [
+        ],
+        "internship": [
+        ],
+        "passing_scores": [
+        ],
+        "main_disciplines": [
+        ],
+        "other": ""
+      },
+      "logo": "org_logo/5.png",
+      "event": null,
+      "best_students": [],
+      "offer": [],
+      "video_link": "",
+      "org_detail": "",
+      "plan": ""
+    }
+  },
+  {
+    "model": "api.Organization",
+    "pk": 6,
+    "fields": {
+      "name": "Педагогическое образование (с двумя профилями подготовки) (Иностранный (английский) язык и иностранный (китайский) язык)",
+      "school": "Школа педагогики",
+      "number": "44.03.05",
+      "place": 25,
+      "price": null,
+      "jsons": {
+        "subjects": [
+        ],
+        "work": [
+        ],
+        "practice": [
+        ],
+        "internship": [
+        ],
+        "passing_scores": [
+        ],
+        "main_disciplines": [
+        ],
+        "other": ""
+      },
+      "logo": "org_logo/6.png",
+      "event": null,
+      "best_students": [],
+      "offer": [],
+      "video_link": "",
+      "org_detail": "",
+      "plan": ""
+    }
+  },
+  {
+    "model": "api.Organization",
+    "pk": 7,
+    "fields": {
+      "name": "Педагогическое образование (с двумя профилями подготовки) (Информационные технологии и математика)",
+      "school": "Школа педагогики",
+      "number": "44.03.05",
+      "place": 20,
+      "price": null,
+      "jsons": {
+        "subjects": [
+        ],
+        "work": [
+        ],
+        "practice": [
+        ],
+        "internship": [
+        ],
+        "passing_scores": [
+        ],
+        "main_disciplines": [
+        ],
+        "other": ""
+      },
+      "logo": "org_logo/7.png",
+      "event": null,
+      "best_students": [],
+      "offer": [],
+      "video_link": "",
+      "org_detail": "",
+      "plan": ""
+    }
+  },
+  {
+    "model": "api.Organization",
+    "pk": 8,
+    "fields": {
+      "name": "Педагогическое образование (Русский язык как иностранный)",
+      "school": "Школа педагогики",
+      "number": "44.03.01",
+      "place": 20,
+      "price": null,
+      "jsons": {
+        "subjects": [
+        ],
+        "work": [
+        ],
+        "practice": [
+        ],
+        "internship": [
+        ],
+        "passing_scores": [
+        ],
+        "main_disciplines": [
+        ],
+        "other": ""
+      },
+      "logo": "org_logo/8.png",
+      "event": null,
+      "best_students": [],
+      "offer": [],
+      "video_link": "",
+      "org_detail": "",
+      "plan": ""
+    }
+  },
+  {
+    "model": "api.Organization",
+    "pk": 9,
+    "fields": {
+      "name": "Специальное (дефектологическое) образование",
+      "school": "Школа искусств и гуманитарных наук",
+      "number": "44.03.03",
+      "place": 20,
+      "price": null,
+      "jsons": {
+        "subjects": [
+        ],
+        "work": [
+        ],
+        "practice": [
+        ],
+        "internship": [
+        ],
+        "passing_scores": [
+        ],
+        "main_disciplines": [
+        ],
+        "other": ""
+      },
+      "logo": "org_logo/9.png",
+      "event": null,
+      "best_students": [],
+      "offer": [],
+      "video_link": "",
+      "org_detail": "",
+      "plan": ""
+    }
+  },
+  {
+    "model": "api.Organization",
+    "pk": 10,
+    "fields": {
+      "name": "Гостиничное дело",
+      "school": "Школа экономики и менеджмента",
+      "number": "43.03.03",
+      "place": 42,
+      "price": null,
+      "jsons": {
+        "subjects": [
+        ],
+        "work": [
+        ],
+        "practice": [
+        ],
+        "internship": [
+        ],
+        "passing_scores": [
+        ],
+        "main_disciplines": [
+        ],
+        "other": ""
+      },
+      "logo": "org_logo/10.png",
+      "event": null,
+      "best_students": [],
+      "offer": [],
+      "video_link": "",
+      "org_detail": "",
+      "plan": ""
+    }
+  },
+  {
+    "model": "api.Organization",
+    "pk": 11,
+    "fields": {
+      "name": "Туризм",
+      "school": "Школа экономики и менеджмента",
+      "number": "43.03.02",
+      "place": 42,
+      "price": null,
+      "jsons": {
+        "subjects": [
+        ],
+        "work": [
+        ],
+        "practice": [
+        ],
+        "internship": [
+        ],
+        "passing_scores": [
+        ],
+        "main_disciplines": [
+        ],
+        "other": ""
+      },
+      "logo": "org_logo/11.png",
+      "event": null,
+      "best_students": [],
+      "offer": [],
+      "video_link": "",
+      "org_detail": "",
+      "plan": ""
+    }
+  },
+  {
+    "model": "api.Organization",
+    "pk": 12,
+    "fields": {
+      "name": "Журналистика",
+      "school": "Школа искусств и гуманитарных наук",
+      "number": "42.03.02",
+      "place": 25,
+      "price": null,
+      "jsons": {
+        "subjects": [
+        ],
+        "work": [
+        ],
+        "practice": [
+        ],
+        "internship": [
+        ],
+        "passing_scores": [
+        ],
+        "main_disciplines": [
+        ],
+        "other": ""
+      },
+      "logo": "org_logo/12.png",
+      "event": null,
+      "best_students": [],
+      "offer": [],
+      "video_link": "",
+      "org_detail": "",
+      "plan": ""
+    }
+  },
+  {
+    "model": "api.Organization",
+    "pk": 13,
+    "fields": {
+      "name": "Политология",
+      "school": "Восточный институт — Школа региональных и международных исследований",
+      "number": "41.03.04",
+      "place": 20,
+      "price": null,
+      "jsons": {
+        "subjects": [
+        ],
+        "work": [
+        ],
+        "practice": [
+        ],
+        "internship": [
+        ],
+        "passing_scores": [
+        ],
+        "main_disciplines": [
+        ],
+        "other": ""
+      },
+      "logo": "org_logo/13.png",
+      "event": null,
+      "best_students": [],
+      "offer": [],
+      "video_link": "",
+      "org_detail": "",
+      "plan": ""
+    }
+  },
+  {
+    "model": "api.Organization",
+    "pk": 14,
+    "fields": {
+      "name": "Юриспруденция",
+      "school": "Юридическая школа",
+      "number": "40.03.01",
+      "place": 81,
+      "price": null,
+      "jsons": {
+        "subjects": [
+        ],
+        "work": [
+        ],
+        "practice": [
+        ],
+        "internship": [
+        ],
+        "passing_scores": [
+        ],
+        "main_disciplines": [
+        ],
+        "other": ""
+      },
+      "logo": "org_logo/14.png",
+      "event": null,
+      "best_students": [],
+      "offer": [],
+      "video_link": "",
+      "org_detail": "",
+      "plan": ""
+    }
+  },
+  {
+    "model": "api.Organization",
+    "pk": 15,
+    "fields": {
+      "name": "Социология",
+      "school": "Школа искусств и гуманитарных наук",
+      "number": "39.03.01",
+      "place": 25,
+      "price": null,
+      "jsons": {
+        "subjects": [
+        ],
+        "work": [
+        ],
+        "practice": [
+        ],
+        "internship": [
+        ],
+        "passing_scores": [
+        ],
+        "main_disciplines": [
+        ],
+        "other": ""
+      },
+      "logo": "org_logo/15.png",
+      "event": null,
+      "best_students": [],
+      "offer": [],
+      "video_link": "",
+      "org_detail": "",
+      "plan": ""
+    }
+  },
+  {
+    "model": "api.Organization",
+    "pk": 16,
+    "fields": {
+      "name": "Менеджмент",
+      "school": "Школа экономики и менеджмента",
+      "number": "38.03.02",
+      "place": 50,
+      "price": null,
+      "jsons": {
+        "subjects": [
+        ],
+        "work": [
+        ],
+        "practice": [
+        ],
+        "internship": [
+        ],
+        "passing_scores": [
+        ],
+        "main_disciplines": [
+        ],
+        "other": ""
+      },
+      "logo": "org_logo/16.png",
+      "event": null,
+      "best_students": [],
+      "offer": [],
+      "video_link": "",
+      "org_detail": "",
+      "plan": ""
+    }
+  },
+  {
+    "model": "api.Organization",
+    "pk": 17,
+    "fields": {
+      "name": "Экономика",
+      "school": "Школа экономики и менеджмента",
+      "number": "38.03.01",
+      "place": 160,
+      "price": null,
+      "jsons": {
+        "subjects": [
+        ],
+        "work": [
+        ],
+        "practice": [
+        ],
+        "internship": [
+        ],
+        "passing_scores": [
+        ],
+        "main_disciplines": [
+        ],
+        "other": ""
+      },
+      "logo": "org_logo/17.png",
+      "event": null,
+      "best_students": [],
+      "offer": [],
+      "video_link": "",
+      "org_detail": "",
+      "plan": ""
+    }
+  },
+  {
+    "model": "api.Organization",
+    "pk": 18,
+    "fields": {
+      "name": "Конфликтология",
+      "school": "Школа искусств и гуманитарных наук",
+      "number": "37.03.02",
+      "place": 25,
+      "price": null,
+      "jsons": {
+        "subjects": [
+        ],
+        "work": [
+        ],
+        "practice": [
+        ],
+        "internship": [
+        ],
+        "passing_scores": [
+        ],
+        "main_disciplines": [
+        ],
+        "other": ""
+      },
+      "logo": "org_logo/18.png",
+      "event": null,
+      "best_students": [],
+      "offer": [],
+      "video_link": "",
+      "org_detail": "",
+      "plan": ""
+    }
+  },
+  {
+    "model": "api.Organization",
+    "pk": 19,
+    "fields": {
+      "name": "Фармация",
+      "school": "Школа биомедицины",
+      "number": "33.05.01",
+      "place": 18,
+      "price": null,
+      "jsons": {
+        "subjects": [
+        ],
+        "work": [
+        ],
+        "practice": [
+        ],
+        "internship": [
+        ],
+        "passing_scores": [
+        ],
+        "main_disciplines": [
+        ],
+        "other": ""
+      },
+      "logo": "org_logo/19.png",
+      "event": null,
+      "best_students": [],
+      "offer": [],
+      "video_link": "",
+      "org_detail": "",
+      "plan": ""
+    }
+  },
+  {
+    "model": "api.Organization",
+    "pk": 20,
+    "fields": {
+      "name": "Лечебное дело",
+      "school": "Школа биомедицины",
+      "number": "31.05.01",
+      "place": 100,
+      "price": null,
+      "jsons": {
+        "subjects": [
+        ],
+        "work": [
+        ],
+        "practice": [
+        ],
+        "internship": [
+        ],
+        "passing_scores": [
+        ],
+        "main_disciplines": [
+        ],
+        "other": ""
+      },
+      "logo": "org_logo/20.png",
+      "event": null,
+      "best_students": [],
+      "offer": [],
+      "video_link": "",
+      "org_detail": "",
+      "plan": ""
+    }
+  },
+  {
+    "model": "api.Organization",
+    "pk": 21,
+    "fields": {
+      "name": "Медицинская биохимия",
+      "school": "Школа биомедицины",
+      "number": "30.05.01",
+      "place": 17,
+      "price": null,
+      "jsons": {
+        "subjects": [
+        ],
+        "work": [
+        ],
+        "practice": [
+        ],
+        "internship": [
+        ],
+        "passing_scores": [
+        ],
+        "main_disciplines": [
+        ],
+        "other": ""
+      },
+      "logo": "org_logo/21.png",
+      "event": null,
+      "best_students": [],
+      "offer": [],
+      "video_link": "",
+      "org_detail": "",
+      "plan": ""
+    }
+  },
+  {
+    "model": "api.Organization",
+    "pk": 22,
+    "fields": {
+      "name": "Технология транспортных процессов",
+      "school": "Политехнический институт",
+      "number": "23.03.01",
+      "place": 30,
+      "price": null,
+      "jsons": {
+        "subjects": [
+        ],
+        "work": [
+        ],
+        "practice": [
+        ],
+        "internship": [
+        ],
+        "passing_scores": [
+        ],
+        "main_disciplines": [
+        ],
+        "other": ""
+      },
+      "logo": "org_logo/22.png",
+      "event": null,
+      "best_students": [],
+      "offer": [],
+      "video_link": "",
+      "org_detail": "",
+      "plan": ""
+    }
+  },
+  {
+    "model": "api.Organization",
+    "pk": 23,
+    "fields": {
+      "name": "Прикладная геодезия",
+      "school": "Политехнический институт",
+      "number": "21.05.01",
+      "place": 25,
+      "price": null,
+      "jsons": {
+        "subjects": [
+        ],
+        "work": [
+        ],
+        "practice": [
+        ],
+        "internship": [
+        ],
+        "passing_scores": [
+        ],
+        "main_disciplines": [
+        ],
+        "other": ""
+      },
+      "logo": "org_logo/23.png",
+      "event": null,
+      "best_students": [],
+      "offer": [],
+      "video_link": "",
+      "org_detail": "",
+      "plan": ""
+    }
+  },
+  {
+    "model": "api.Organization",
+    "pk": 24,
+    "fields": {
+      "name": "Землеустройство и кадастры",
+      "school": "Политехнический институт",
+      "number": "21.03.02",
+      "place": 25,
+      "price": null,
+      "jsons": {
+        "subjects": [
+        ],
+        "work": [
+        ],
+        "practice": [
+        ],
+        "internship": [
+        ],
+        "passing_scores": [
+        ],
+        "main_disciplines": [
+        ],
+        "other": ""
+      },
+      "logo": "org_logo/24.png",
+      "event": null,
+      "best_students": [],
+      "offer": [],
+      "video_link": "",
+      "org_detail": "",
+      "plan": ""
+    }
+  },
+  {
+    "model": "api.Organization",
+    "pk": 25,
+    "fields": {
+      "name": "Международное ресторанное дело",
+      "school": "Школа экономики и менеджмента",
+      "number": "19.03.04",
+      "place": 0,
+      "price": null,
+      "jsons": {
+        "subjects": [
+        ],
+        "work": [
+        ],
+        "practice": [
+        ],
+        "internship": [
+        ],
+        "passing_scores": [
+        ],
+        "main_disciplines": [
+        ],
+        "other": ""
+      },
+      "logo": "org_logo/25.png",
+      "event": null,
+      "best_students": [],
+      "offer": [],
+      "video_link": "",
+      "org_detail": "",
+      "plan": ""
+    }
+  },
+  {
+    "model": "api.Organization",
+    "pk": 26,
+    "fields": {
+      "name": "Нефтегазовое дело",
+      "school": "Политехнический институт",
+      "number": "21.03.01",
+      "place": 50,
+      "price": null,
+      "jsons": {
+        "subjects": [
+        ],
+        "work": [
+        ],
+        "practice": [
+        ],
+        "internship": [
+        ],
+        "passing_scores": [
+        ],
+        "main_disciplines": [
+        ],
+        "other": ""
+      },
+      "logo": "org_logo/26.png",
+      "event": null,
+      "best_students": [],
+      "offer": [],
+      "video_link": "",
+      "org_detail": "",
+      "plan": ""
+    }
+  },
+  {
+    "model": "api.Organization",
+    "pk": 27,
+    "fields": {
+      "name": "Химическая технология",
+      "school": "Школа естественных наук",
+      "number": "18.03.01",
+      "place": 50,
+      "price": null,
+      "jsons": {
+        "subjects": [
+        ],
+        "work": [
+        ],
+        "practice": [
+        ],
+        "internship": [
+        ],
+        "passing_scores": [
+        ],
+        "main_disciplines": [
+        ],
+        "other": ""
+      },
+      "logo": "org_logo/27.png",
+      "event": null,
+      "best_students": [],
+      "offer": [],
+      "video_link": "",
+      "org_detail": "",
+      "plan": ""
+    }
+  },
+  {
+    "model": "api.Organization",
+    "pk": 28,
+    "fields": {
+      "name": "Автоматизация технологических процессов и производств",
+      "school": "Политехнический институт",
+      "number": "15.03.04",
+      "place": 50,
+      "price": null,
+      "jsons": {
+        "subjects": [
+        ],
+        "work": [
+        ],
+        "practice": [
+        ],
+        "internship": [
+        ],
+        "passing_scores": [
+        ],
+        "main_disciplines": [
+        ],
+        "other": ""
+      },
+      "logo": "org_logo/28.png",
+      "event": null,
+      "best_students": [],
+      "offer": [],
+      "video_link": "",
+      "org_detail": "",
+      "plan": ""
+    }
+  },
+  {
+    "model": "api.Organization",
+    "pk": 29,
+    "fields": {
+      "name": "Машиностроение",
+      "school": "Политехнический институт",
+      "number": "15.03.01",
+      "place": 25,
+      "price": null,
+      "jsons": {
+        "subjects": [
+        ],
+        "work": [
+        ],
+        "practice": [
+        ],
+        "internship": [
+        ],
+        "passing_scores": [
+        ],
+        "main_disciplines": [
+        ],
+        "other": ""
+      },
+      "logo": "org_logo/29.png",
+      "event": null,
+      "best_students": [],
+      "offer": [],
+      "video_link": "",
+      "org_detail": "",
+      "plan": ""
+    }
+  },
+  {
+    "model": "api.Organization",
+    "pk": 30,
+    "fields": {
+      "name": "Электроника и наноэлектроника",
+      "school": "Политехнический институт",
+      "number": "11.03.04",
+      "place": 25,
+      "price": null,
+      "jsons": {
+        "subjects": [
+        ],
+        "work": [
+        ],
+        "practice": [
+        ],
+        "internship": [
+        ],
+        "passing_scores": [
+        ],
+        "main_disciplines": [
+        ],
+        "other": ""
+      },
+      "logo": "org_logo/30.png",
+      "event": null,
+      "best_students": [],
+      "offer": [],
+      "video_link": "",
+      "org_detail": "",
+      "plan": ""
+    }
+  },
+  {
+    "model": "api.Organization",
+    "pk": 31,
+    "fields": {
+      "name": "Инфокоммуникационные технологии и системы связи",
+      "school": "Школа естественных наук",
+      "number": "11.03.02",
+      "place": 50,
+      "price": null,
+      "jsons": {
+        "subjects": [
+        ],
+        "work": [
+        ],
+        "practice": [
+        ],
+        "internship": [
+        ],
+        "passing_scores": [
+        ],
+        "main_disciplines": [
+        ],
+        "other": ""
+      },
+      "logo": "org_logo/31.png",
+      "event": null,
+      "best_students": [],
+      "offer": [],
+      "video_link": "",
+      "org_detail": "",
+      "plan": ""
+    }
+  },
+  {
+    "model": "api.Organization",
+    "pk": 32,
+    "fields": {
+      "name": "Информационная безопасность",
+      "school": "Школа естественных наук",
+      "number": "10.03.01",
+      "place": 50,
+      "price": null,
+      "jsons": {
+        "subjects": [
+        ],
+        "work": [
+        ],
+        "practice": [
+        ],
+        "internship": [
+        ],
+        "passing_scores": [
+        ],
+        "main_disciplines": [
+        ],
+        "other": ""
+      },
+      "logo": "org_logo/32.png",
+      "event": null,
+      "best_students": [],
+      "offer": [],
+      "video_link": "",
+      "org_detail": "",
+      "plan": ""
+    }
+  },
+  {
+    "model": "api.Organization",
+    "pk": 33,
+    "fields": {
+      "name": "Программная инженерия",
+      "school": "Школа естественных наук",
+      "number": "09.03.04",
+      "place": 124,
+      "price": null,
+      "jsons": {
+        "subjects": [
+        ],
+        "work": [
+        ],
+        "practice": [
+        ],
+        "internship": [
+        ],
+        "passing_scores": [
+        ],
+        "main_disciplines": [
+        ],
+        "other": ""
+      },
+      "logo": "org_logo/33.png",
+      "event": null,
+      "best_students": [],
+      "offer": [],
+      "video_link": "",
+      "org_detail": "",
+      "plan": ""
+    }
+  },
+  {
+    "model": "api.Organization",
+    "pk": 34,
+    "fields": {
+      "name": "Прикладная информатика",
+      "school": "Школа естественных наук",
+      "number": "09.03.03",
+      "place": 150,
+      "price": null,
+      "jsons": {
+        "subjects": [
+        ],
+        "work": [
+        ],
+        "practice": [
+        ],
+        "internship": [
+        ],
+        "passing_scores": [
+        ],
+        "main_disciplines": [
+        ],
+        "other": ""
+      },
+      "logo": "org_logo/34.png",
+      "event": null,
+      "best_students": [],
+      "offer": [],
+      "video_link": "",
+      "org_detail": "",
+      "plan": ""
+    }
+  },
+  {
+    "model": "api.Organization",
+    "pk": 35,
+    "fields": {
+      "name": "Строительство уникальных зданий и сооружений",
+      "school": "Политехнический институт",
+      "number": "08.05.01",
+      "place": 45,
+      "price": null,
+      "jsons": {
+        "subjects": [
+        ],
+        "work": [
+        ],
+        "practice": [
+        ],
+        "internship": [
+        ],
+        "passing_scores": [
+        ],
+        "main_disciplines": [
+        ],
+        "other": ""
+      },
+      "logo": "org_logo/35.png",
+      "event": null,
+      "best_students": [],
+      "offer": [],
+      "video_link": "",
+      "org_detail": "",
+      "plan": ""
+    }
+  },
+  {
+    "model": "api.Organization",
+    "pk": 36,
+    "fields": {
+      "name": "Строительство",
+      "school": "Политехнический институт",
+      "number": "08.03.01",
+      "place": 100,
+      "price": null,
+      "jsons": {
+        "subjects": [
+        ],
+        "work": [
+        ],
+        "practice": [
+        ],
+        "internship": [
+        ],
+        "passing_scores": [
+        ],
+        "main_disciplines": [
+        ],
+        "other": ""
+      },
+      "logo": "org_logo/36.png",
+      "event": null,
+      "best_students": [],
+      "offer": [],
+      "video_link": "",
+      "org_detail": "",
+      "plan": ""
+    }
+  },
+  {
+    "model": "api.Organization",
+    "pk": 37,
+    "fields": {
+      "name": "Архитектура",
+      "school": "Политехнический институт",
+      "number": "07.03.01",
+      "place": 25,
+      "price": null,
+      "jsons": {
+        "subjects": [
+        ],
+        "work": [
+        ],
+        "practice": [
+        ],
+        "internship": [
+        ],
+        "passing_scores": [
+        ],
+        "main_disciplines": [
+        ],
+        "other": ""
+      },
+      "logo": "org_logo/37.png",
+      "event": null,
+      "best_students": [],
+      "offer": [],
+      "video_link": "",
+      "org_detail": "",
+      "plan": ""
+    }
+  },
+  {
+    "model": "api.Organization",
+    "pk": 38,
+    "fields": {
+      "name": "Биология",
+      "school": "Школа естественных наук",
+      "number": "06.03.01",
+      "place": 75,
+      "price": null,
+      "jsons": {
+        "subjects": [
+        ],
+        "work": [
+        ],
+        "practice": [
+        ],
+        "internship": [
+        ],
+        "passing_scores": [
+        ],
+        "main_disciplines": [
+        ],
+        "other": ""
+      },
+      "logo": "org_logo/38.png",
+      "event": null,
+      "best_students": [],
+      "offer": [],
+      "video_link": "",
+      "org_detail": "",
+      "plan": ""
+    }
+  },
+  {
+    "model": "api.Organization",
+    "pk": 39,
+    "fields": {
+      "name": "География",
+      "school": "Школа естественных наук",
+      "number": "05.03.02",
+      "place": 20,
+      "price": null,
+      "jsons": {
+        "subjects": [
+        ],
+        "work": [
+        ],
+        "practice": [
+        ],
+        "internship": [
+        ],
+        "passing_scores": [
+        ],
+        "main_disciplines": [
+        ],
+        "other": ""
+      },
+      "logo": "org_logo/39.png",
+      "event": null,
+      "best_students": [],
+      "offer": [],
+      "video_link": "",
+      "org_detail": "",
+      "plan": ""
+    }
+  },
+  {
+    "model": "api.Organization",
+    "pk": 40,
+    "fields": {
+      "name": "Геология",
+      "school": "Школа естественных наук",
+      "number": "05.03.01",
+      "place": 20,
+      "price": null,
+      "jsons": {
+        "subjects": [
+        ],
+        "work": [
+        ],
+        "practice": [
+        ],
+        "internship": [
+        ],
+        "passing_scores": [
+        ],
+        "main_disciplines": [
+        ],
+        "other": ""
+      },
+      "logo": "org_logo/40.png",
+      "event": null,
+      "best_students": [],
+      "offer": [],
+      "video_link": "",
+      "org_detail": "",
+      "plan": ""
+    }
+  },
+  {
+    "model": "api.Organization",
+    "pk": 41,
+    "fields": {
+      "name": "Химия",
+      "school": "Школа естественных наук",
+      "number": "04.03.01",
+      "place": 50,
+      "price": null,
+      "jsons": {
+        "subjects": [
+        ],
+        "work": [
+        ],
+        "practice": [
+        ],
+        "internship": [
+        ],
+        "passing_scores": [
+        ],
+        "main_disciplines": [
+        ],
+        "other": ""
+      },
+      "logo": "org_logo/41.png",
+      "event": null,
+      "best_students": [],
+      "offer": [],
+      "video_link": "",
+      "org_detail": "",
+      "plan": ""
+    }
+  },
+  {
+    "model": "api.Organization",
+    "pk": 42,
+    "fields": {
+      "name": "Математика и компьютерные науки",
+      "school": "Школа естественных наук",
+      "number": "02.03.01",
+      "place": 50,
+      "price": null,
+      "jsons": {
+        "subjects": [
+        ],
+        "work": [
+        ],
+        "practice": [
+        ],
+        "internship": [
+        ],
+        "passing_scores": [
+        ],
+        "main_disciplines": [
+        ],
+        "other": ""
+      },
+      "logo": "org_logo/42.png",
+      "event": null,
+      "best_students": [],
+      "offer": [],
+      "video_link": "",
+      "org_detail": "",
+      "plan": ""
+    }
+  },
+  {
+    "model": "api.Organization",
+    "pk": 43,
+    "fields": {
+      "name": "Прикладная математика",
+      "school": "Школа естественных наук",
+      "number": "01.03.04",
+      "place": 25,
+      "price": null,
+      "jsons": {
+        "subjects": [
+        ],
+        "work": [
+        ],
+        "practice": [
+        ],
+        "internship": [
+        ],
+        "passing_scores": [
+        ],
+        "main_disciplines": [
+        ],
+        "other": ""
+      },
+      "logo": "org_logo/43.png",
+      "event": null,
+      "best_students": [],
+      "offer": [],
+      "video_link": "",
+      "org_detail": "",
+      "plan": ""
+    }
+  },
+  {
+    "model": "api.Organization",
+    "pk": 44,
+    "fields": {
+      "name": "Прикладная математика и информатика",
+      "school": "Школа естественных наук",
+      "number": "01.03.02",
+      "place": 75,
+      "price": null,
+      "jsons": {
+        "subjects": [
+        ],
+        "work": [
+        ],
+        "practice": [
+        ],
+        "internship": [
+        ],
+        "passing_scores": [
+        ],
+        "main_disciplines": [
+        ],
+        "other": ""
+      },
+      "logo": "org_logo/44.png",
+      "event": null,
+      "best_students": [],
+      "offer": [],
+      "video_link": "",
+      "org_detail": "",
+      "plan": ""
+    }
+  },
+  {
+    "model": "api.Organization",
+    "pk": 45,
+    "fields": {
+      "name": "Педагогическое образование (с двумя профилями подготовки) (Начальное образование и профиль по выбору (логопедия, английский язык, информатика)",
+      "school": "Школа педагогики",
+      "number": "44.03.05",
+      "place": 25,
+      "price": null,
+      "jsons": {
+        "subjects": [
+        ],
+        "work": [
+        ],
+        "practice": [
+        ],
+        "internship": [
+        ],
+        "passing_scores": [
+        ],
+        "main_disciplines": [
+        ],
+        "other": ""
+      },
+      "logo": "org_logo/45.png",
+      "event": null,
+      "best_students": [],
+      "offer": [],
+      "video_link": "",
+      "org_detail": "",
+      "plan": ""
+    }
+  },
+  {
+    "model": "api.Organization",
+    "pk": 46,
+    "fields": {
+      "name": "Реклама и связи с общественностью",
+      "school": "Школа искусств и гуманитарных наук",
+      "number": "42.03.01",
+      "place": 30,
+      "price": null,
+      "jsons": {
+        "subjects": [
+        ],
+        "work": [
+        ],
+        "practice": [
+        ],
+        "internship": [
+        ],
+        "passing_scores": [
+        ],
+        "main_disciplines": [
+        ],
+        "other": ""
+      },
+      "logo": "org_logo/46.png",
+      "event": null,
+      "best_students": [],
+      "offer": [],
+      "video_link": "",
+      "org_detail": "",
+      "plan": ""
+    }
+  },
+  {
+    "model": "api.Organization",
+    "pk": 47,
+    "fields": {
+      "name": "Международные отношения",
+      "school": "Восточный институт — Школа региональных и международных исследований",
+      "number": "41.03.05",
+      "place": 40,
+      "price": null,
+      "jsons": {
+        "subjects": [
+        ],
+        "work": [
+        ],
+        "practice": [
+        ],
+        "internship": [
+        ],
+        "passing_scores": [
+        ],
+        "main_disciplines": [
+        ],
+        "other": ""
+      },
+      "logo": "org_logo/47.png",
+      "event": null,
+      "best_students": [],
+      "offer": [],
+      "video_link": "",
+      "org_detail": "",
+      "plan": ""
+    }
+  },
+  {
+    "model": "api.Organization",
+    "pk": 48,
+    "fields": {
+      "name": "Зарубежное регионоведение",
+      "school": "Восточный институт — Школа региональных и международных исследований",
+      "number": "41.03.01",
+      "place": 39,
+      "price": null,
+      "jsons": {
+        "subjects": [
+        ],
+        "work": [
+        ],
+        "practice": [
+        ],
+        "internship": [
+        ],
+        "passing_scores": [
+        ],
+        "main_disciplines": [
+        ],
+        "other": ""
+      },
+      "logo": "org_logo/48.png",
+      "event": null,
+      "best_students": [],
+      "offer": [],
+      "video_link": "",
+      "org_detail": "",
+      "plan": ""
+    }
+  },
+  {
+    "model": "api.Organization",
+    "pk": 49,
+    "fields": {
+      "name": "Экономическая безопасность",
+      "school": "Школа экономики и менеджмента",
+      "number": "38.05.01",
+      "place": 5,
+      "price": null,
+      "jsons": {
+        "subjects": [
+        ],
+        "work": [
+        ],
+        "practice": [
+        ],
+        "internship": [
+        ],
+        "passing_scores": [
+        ],
+        "main_disciplines": [
+        ],
+        "other": ""
+      },
+      "logo": "org_logo/49.png",
+      "event": null,
+      "best_students": [],
+      "offer": [],
+      "video_link": "",
+      "org_detail": "",
+      "plan": ""
+    }
+  },
+  {
+    "model": "api.Organization",
+    "pk": 50,
+    "fields": {
+      "name": "Психология",
+      "school": "Школа искусств и гуманитарных наук",
+      "number": "37.03.01",
+      "place": 25,
+      "price": null,
+      "jsons": {
+        "subjects": [
+        ],
+        "work": [
+        ],
+        "practice": [
+        ],
+        "internship": [
+        ],
+        "passing_scores": [
+        ],
+        "main_disciplines": [
+        ],
+        "other": ""
+      },
+      "logo": "org_logo/50.png",
+      "event": null,
+      "best_students": [],
+      "offer": [],
+      "video_link": "",
+      "org_detail": "",
+      "plan": ""
+    }
+  },
+  {
+    "model": "api.Organization",
+    "pk": 51,
+    "fields": {
+      "name": "Медицинская биофизика",
+      "school": "Школа биомедицины",
+      "number": "30.05.02",
+      "place": 20,
+      "price": null,
+      "jsons": {
+        "subjects": [
+        ],
+        "work": [
+        ],
+        "practice": [
+        ],
+        "internship": [
+        ],
+        "passing_scores": [
+        ],
+        "main_disciplines": [
+        ],
+        "other": ""
+      },
+      "logo": "org_logo/51.png",
+      "event": null,
+      "best_students": [],
+      "offer": [],
+      "video_link": "",
+      "org_detail": "",
+      "plan": ""
+    }
+  },
+  {
+    "model": "api.Organization",
+    "pk": 52,
+    "fields": {
+      "name": "Инноватика",
+      "school": "Политехнический институт",
+      "number": "27.03.05",
+      "place": 25,
+      "price": null,
+      "jsons": {
+        "subjects": [
+        ],
+        "work": [
+        ],
+        "practice": [
+        ],
+        "internship": [
+        ],
+        "passing_scores": [
+        ],
+        "main_disciplines": [
+        ],
+        "other": ""
+      },
+      "logo": "org_logo/52.png",
+      "event": null,
+      "best_students": [],
+      "offer": [],
+      "video_link": "",
+      "org_detail": "",
+      "plan": ""
+    }
+  },
+  {
+    "model": "api.Organization",
+    "pk": 53,
+    "fields": {
+      "name": "Кораблестроение, океанотехника и системотехника объектов морской инфраструктуры",
+      "school": "Политехнический институт",
+      "number": "26.03.02",
+      "place": 80,
+      "price": null,
+      "jsons": {
+        "subjects": [
+        ],
+        "work": [
+        ],
+        "practice": [
+        ],
+        "internship": [
+        ],
+        "passing_scores": [
+        ],
+        "main_disciplines": [
+        ],
+        "other": ""
+      },
+      "logo": "org_logo/53.png",
+      "event": null,
+      "best_students": [],
+      "offer": [],
+      "video_link": "",
+      "org_detail": "",
+      "plan": ""
+    }
+  },
+  {
+    "model": "api.Organization",
+    "pk": 54,
+    "fields": {
+      "name": "Биотехнология",
+      "school": "Школа биомедицины",
+      "number": "19.03.01",
+      "place": 50,
+      "price": null,
+      "jsons": {
+        "subjects": [
+        ],
+        "work": [
+        ],
+        "practice": [
+        ],
+        "internship": [
+        ],
+        "passing_scores": [
+        ],
+        "main_disciplines": [
+        ],
+        "other": ""
+      },
+      "logo": "org_logo/54.png",
+      "event": null,
+      "best_students": [],
+      "offer": [],
+      "video_link": "",
+      "org_detail": "",
+      "plan": ""
+    }
+  },
+  {
+    "model": "api.Organization",
+    "pk": 55,
+    "fields": {
+      "name": "Мехатроника и робототехника",
+      "school": "Политехнический институт",
+      "number": "15.03.06",
+      "place": 25,
+      "price": null,
+      "jsons": {
+        "subjects": [
+        ],
+        "work": [
+        ],
+        "practice": [
+        ],
+        "internship": [
+        ],
+        "passing_scores": [
+        ],
+        "main_disciplines": [
+        ],
+        "other": ""
+      },
+      "logo": "org_logo/55.png",
+      "event": null,
+      "best_students": [],
+      "offer": [],
+      "video_link": "",
+      "org_detail": "",
+      "plan": ""
+    }
+  },
+  {
+    "model": "api.Organization",
+    "pk": 56,
+    "fields": {
+      "name": "Электроэнергетика и электротехника",
+      "school": "Политехнический институт",
+      "number": "13.03.02",
+      "place": 30,
+      "price": null,
+      "jsons": {
+        "subjects": [
+        ],
+        "work": [
+        ],
+        "practice": [
+        ],
+        "internship": [
+        ],
+        "passing_scores": [
+        ],
+        "main_disciplines": [
+        ],
+        "other": ""
+      },
+      "logo": "org_logo/56.png",
+      "event": null,
+      "best_students": [],
+      "offer": [],
+      "video_link": "",
+      "org_detail": "",
+      "plan": ""
+    }
+  },
+  {
+    "model": "api.Organization",
+    "pk": 57,
+    "fields": {
+      "name": "Компьютерная безопасность",
+      "school": "Школа естественных наук",
+      "number": "10.05.01",
+      "place": 70,
+      "price": null,
+      "jsons": {
+        "subjects": [
+        ],
+        "work": [
+        ],
+        "practice": [
+        ],
+        "internship": [
+        ],
+        "passing_scores": [
+        ],
+        "main_disciplines": [
+        ],
+        "other": ""
+      },
+      "logo": "org_logo/57.png",
+      "event": null,
+      "best_students": [],
+      "offer": [],
+      "video_link": "",
+      "org_detail": "",
+      "plan": ""
+    }
+  },
+  {
+    "model": "api.Organization",
+    "pk": 58,
+    "fields": {
+      "name": "Информационные системы и технологии",
+      "school": "Школа естественных наук",
+      "number": "09.03.02",
+      "place": 50,
+      "price": null,
+      "jsons": {
+        "subjects": [
+        ],
+        "work": [
+        ],
+        "practice": [
+        ],
+        "internship": [
+        ],
+        "passing_scores": [
+        ],
+        "main_disciplines": [
+        ],
+        "other": ""
+      },
+      "logo": "org_logo/58.png",
+      "event": null,
+      "best_students": [],
+      "offer": [],
+      "video_link": "",
+      "org_detail": "",
+      "plan": ""
+    }
+  },
+  {
+    "model": "api.Organization",
+    "pk": 59,
+    "fields": {
+      "name": "Дизайн архитектурной среды",
+      "school": "Политехнический институт",
+      "number": "07.03.03",
+      "place": 20,
+      "price": null,
+      "jsons": {
+        "subjects": [
+        ],
+        "work": [
+        ],
+        "practice": [
+        ],
+        "internship": [
+        ],
+        "passing_scores": [
+        ],
+        "main_disciplines": [
+        ],
+        "other": ""
+      },
+      "logo": "org_logo/59.png",
+      "event": null,
+      "best_students": [],
+      "offer": [],
+      "video_link": "",
+      "org_detail": "",
+      "plan": ""
+    }
+  },
+  {
+    "model": "api.Organization",
+    "pk": 60,
+    "fields": {
+      "name": "Экология и природопользование",
+      "school": "Школа естественных наук",
+      "number": "05.03.06",
+      "place": 20,
+      "price": null,
+      "jsons": {
+        "subjects": [
+        ],
+        "work": [
+        ],
+        "practice": [
+        ],
+        "internship": [
+        ],
+        "passing_scores": [
+        ],
+        "main_disciplines": [
+        ],
+        "other": ""
+      },
+      "logo": "org_logo/60.png",
+      "event": null,
+      "best_students": [],
+      "offer": [],
+      "video_link": "",
+      "org_detail": "",
+      "plan": ""
+    }
+  },
+  {
+    "model": "api.Organization",
+    "pk": 61,
+    "fields": {
+      "name": "Физика",
+      "school": "Школа естественных наук",
+      "number": "03.03.02",
+      "place": 50,
+      "price": null,
+      "jsons": {
+        "subjects": [
+        ],
+        "work": [
+        ],
+        "practice": [
+        ],
+        "internship": [
+        ],
+        "passing_scores": [
+        ],
+        "main_disciplines": [
+        ],
+        "other": ""
+      },
+      "logo": "org_logo/61.png",
+      "event": null,
+      "best_students": [],
+      "offer": [],
+      "video_link": "",
+      "org_detail": "",
+      "plan": ""
+    }
+  },
+  {
+    "model": "api.Organization",
+    "pk": 62,
+    "fields": {
+      "name": "Математическое обеспечение и администрирование информационных систем",
+      "school": "Школа естественных наук",
+      "number": "02.03.03",
+      "place": 25,
+      "price": null,
+      "jsons": {
+        "subjects": [
+        ],
+        "work": [
+        ],
+        "practice": [
+        ],
+        "internship": [
+        ],
+        "passing_scores": [
+        ],
+        "main_disciplines": [
+        ],
+        "other": ""
+      },
+      "logo": "org_logo/62.png",
+      "event": null,
+      "best_students": [],
+      "offer": [],
+      "video_link": "",
+      "org_detail": "",
+      "plan": ""
+    }
+  },
+  {
+    "model": "api.Organization",
+    "pk": 63,
+    "fields": {
+      "name": "Востоковедение и африканистика",
+      "school": "Восточный институт — Школа региональных и международных исследований",
+      "number": "58.03.01",
+      "place": 103,
+      "price": null,
+      "jsons": {
+        "subjects": [
+        ],
+        "work": [
+        ],
+        "practice": [
+        ],
+        "internship": [
+        ],
+        "passing_scores": [
+        ],
+        "main_disciplines": [
+        ],
+        "other": ""
+      },
+      "logo": "org_logo/63.png",
+      "event": null,
+      "best_students": [],
+      "offer": [],
+      "video_link": "",
+      "org_detail": "",
+      "plan": ""
+    }
+  },
+  {
+    "model": "api.Organization",
+    "pk": 64,
+    "fields": {
+      "name": "Дизайн",
+      "school": "Школа искусств и гуманитарных наук",
+      "number": "54.03.01",
+      "place": 31,
+      "price": null,
+      "jsons": {
+        "subjects": [
+        ],
+        "work": [
+        ],
+        "practice": [
+        ],
+        "internship": [
+        ],
+        "passing_scores": [
+        ],
+        "main_disciplines": [
+        ],
+        "other": ""
+      },
+      "logo": "org_logo/64.png",
+      "event": null,
+      "best_students": [],
+      "offer": [],
+      "video_link": "",
+      "org_detail": "",
+      "plan": ""
+    }
+  },
+  {
+    "model": "api.Organization",
+    "pk": 65,
+    "fields": {
+      "name": "История",
+      "school": "Школа искусств и гуманитарных наук",
+      "number": "46.03.01",
+      "place": 25,
+      "price": null,
+      "jsons": {
+        "subjects": [
+        ],
+        "work": [
+        ],
+        "practice": [
+        ],
+        "internship": [
+        ],
+        "passing_scores": [
+        ],
+        "main_disciplines": [
+        ],
+        "other": ""
+      },
+      "logo": "org_logo/65.png",
+      "event": null,
+      "best_students": [],
+      "offer": [],
+      "video_link": "",
+      "org_detail": "",
+      "plan": ""
+    }
+  },
+  {
+    "model": "api.Organization",
+    "pk": 66,
+    "fields": {
+      "name": "Перевод и переводоведение",
+      "school": "Восточный институт — Школа региональных и международных исследований",
+      "number": "45.05.01",
+      "place": 36,
+      "price": null,
+      "jsons": {
+        "subjects": [
+        ],
+        "work": [
+        ],
+        "practice": [
+        ],
+        "internship": [
+        ],
+        "passing_scores": [
+        ],
+        "main_disciplines": [
+        ],
+        "other": ""
+      },
+      "logo": "org_logo/66.png",
+      "event": null,
+      "best_students": [],
+      "offer": [],
+      "video_link": "",
+      "org_detail": "",
+      "plan": ""
+    }
+  },
+  {
+    "model": "api.Organization",
+    "pk": 67,
+    "fields": {
+      "name": "Фундаментальная и прикладная лингвистика",
+      "school": "Восточный институт — Школа региональных и международных исследований",
+      "number": "45.03.03",
+      "place": 25,
+      "price": null,
+      "jsons": {
+        "subjects": [
+        ],
+        "work": [
+        ],
+        "practice": [
+        ],
+        "internship": [
+        ],
+        "passing_scores": [
+        ],
+        "main_disciplines": [
+        ],
+        "other": ""
+      },
+      "logo":"org_logo/67.png",
+      "event": null,
+      "best_students": [],
+      "offer": [],
+      "video_link": "",
+      "org_detail": "",
+      "plan": ""
+    }
+  },
+  {
+    "model": "api.Organization",
+    "pk": 68,
+    "fields": {
+      "name": "Лингвистика",
+      "school": "Восточный институт — Школа региональных и международных исследований",
+      "number": "45.03.02",
+      "place": 25,
+      "price": null,
+      "jsons": {
+        "subjects": [
+          {
+            "name": "География",
+            "score": 44
+          },
+          {
+            "name": "Математика",
+            "score": 42
+          },
+          {
+            "name": "Физика",
+            "score": 36
+          }
+        ],
+        "work": [
+        ],
+        "practice": [
+        ],
+        "internship": [
+        ],
+        "passing_scores": [
+          0,
+          0,
+          218,
+          264,
+          250
+        ],
+        "main_disciplines": [
+        ],
+        "other": ""
+      },
+      "logo":"org_logo/68.png",
+      "event": null,
+      "best_students": [],
+      "offer": [],
+      "video_link": "",
+      "org_detail": "",
+      "plan": ""
+    }
+  },
+  {
+    "model": "api.Organization",
+    "pk": 69,
+    "fields": {
+      "name": "Филология (русский язык)",
+      "school": "Восточный институт — Школа региональных и международных исследований",
+      "number": "45.03.01",
+      "place": 25,
+      "price": null,
+      "jsons": {
+        "subjects": [
+          {
+            "name": "Информатика",
+            "score": 44
+          },
+          {
+            "name": "Математика",
+            "score": 42
+          },
+          {
+            "name": "История",
+            "score": 36
+          }
+        ],
+        "work": [
+        ],
+        "practice": [
+        ],
+        "internship": [
+        ],
+        "passing_scores": [
+          0,
+          0,
+          218,
+          264,
+          220
+        ],
+        "main_disciplines": [
+        ],
+        "other": ""
+      },
+      "logo":"org_logo/69.png",
+      "event": null,
+      "best_students": [],
+      "offer": [],
+      "video_link": "",
+      "org_detail": "",
+      "plan": ""
+    }
+  },
+  {
+    "model": "api.Organization",
+    "pk": 70,
+    "fields": {
+      "name": "Физическая культура",
+      "school": "Школа искусств и гуманитарных наук",
+      "number": "49.03.01",
+      "place": 25,
+      "org_detail": "Ну это просто такая специальностьНу это просто такая специальностьНу это просто такая специальностьНу это просто такая специальностьНу это просто такая специальностьНу это просто такая специальностьНу это просто такая специальностьНу это просто такая специальностьНу это просто такая специальностьНу это просто такая специальностьНу это просто такая специальностьНу это просто такая специальностьНу это просто такая специальностьНу это просто такая специальностьНу это просто такая специальностьНу это просто такая специальность",
+      "price": 230000,
+      "jsons": {
+        "subjects": [
+          {
+            "name": "Русский",
+            "score": 44
+          },
+          {
+            "name": "Математика",
+            "score": 42
+          },
+          {
+            "name": "Физика",
+            "score": 36
+          }
+        ],
+        "work": [
+          {
+            "name": "Строитель рабочий",
+            "score": "Работаю"
+          }
+        ],
+        "practice": [
+          {
+            "name": "Строитель практик",
+            "score": "Практикую"
+          }
+        ],
+        "internship": [
+          {
+            "name": "Строитель стажер",
+            "score": "стажеруюсь"
+          }
+        ],
+        "passing_scores": [
+          0,
+          0,
+          218,
+          264,
+          123
+        ],
+        "main_disciplines": [
+          "Первая",
+          "Вторая",
+          "Третья",
+          "Четвертая"
+        ],
+        "other": ""
+      },
+      "logo":"org_logo/70.png",
+      "event": null,
+      "best_students": [1,2,3],
+      "offer": [1,2,3,45],
+      "video_link": "",
+      "plan": ""
+    }
+  }
+]

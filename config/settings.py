@@ -6,27 +6,15 @@ import dj_database_url
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/1.11/howto/static-files/
-# PROJECT_ROOT = os.path.join(os.path.abspath(__file__))
-
-# STATIC_URL = '/static/'
-# STATIC_ROOT = os.path.normpath(os.path.join(BASE_DIR, '../staticfiles'))
-# STATICFILES_DIRS = (
-#     os.path.join(BASE_DIR, '../static'),
-# )
-# STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
-
-
-# dotenv_file = os.path.join(BASE_DIR, ".env")
-# if os.path.isfile(dotenv_file):
-#     dotenv.load_dotenv(dotenv_file)
-
 SECRET_KEY = os.getenv('SECRET_KEY', 'Optional default value')
-# DEBUG = os.getenv('DEBUG')
+
 DEBUG = True
-# ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS')
-ALLOWED_HOSTS = ['secondtryschoolweb.herokuapp.com', '127.0.0.1']
+
+ALLOWED_HOSTS = '*'
+
+AUTH_USER_MODEL = 'api.userProfile'
+
+
 
 INSTALLED_APPS = [
     'api',
@@ -49,7 +37,6 @@ MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
-    'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
@@ -58,6 +45,12 @@ MIDDLEWARE = [
 
 CORS_ORIGIN_ALLOW_ALL = True
 ROOT_URLCONF = 'config.urls'
+# CORS_ORIGIN_WHITELIST = (
+#     'http://google.com',
+#     'http://181aec4cc394.ngrok.io',
+#     'http://127.0.0.1:8000',
+#     'http://127.0.0.1:9000'
+# )
 
 TEMPLATES = [
     {
@@ -110,7 +103,6 @@ USE_L10N = True
 
 USE_TZ = True
 
-AUTH_USER_MODEL = 'api.userProfile'
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
@@ -135,6 +127,10 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 MEDIA_URL = '/media/'
 
 MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR), "media")
+
+FIXTURE_DIRS = [
+    '/fixtures/'
+]
 
 # STATIC_URL = '/static/'
 # STATIC_ROOT = os.path.normpath(os.path.join(BASE_DIR, '../staticfiles'))

@@ -3,7 +3,7 @@ from rest_framework import serializers
 from rest_framework.authtoken.serializers import AuthTokenSerializer
 from django.utils.translation import gettext_lazy as _
 
-from .models import Event, Organization, userProfile, Work, Internship, Practice, BestStudent, Achievements
+from .models import Event, Organization, userProfile, BestStudent, Achievements
 
 
 class Base64ImageField(serializers.ImageField):
@@ -75,22 +75,6 @@ class BestStudentSerializer(serializers.ModelSerializer):
     class Meta:
         model = BestStudent
         fields = '__all__'
-
-class PracticeSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Practice
-        fields = '__all__'
-
-class InternshipSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Internship
-        fields = '__all__'
-
-class WorkSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Work
-        fields = '__all__'
-
 
 class OrganizationSerializer(serializers.ModelSerializer):
     class Meta:

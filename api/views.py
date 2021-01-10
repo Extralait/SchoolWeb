@@ -3,11 +3,10 @@ from rest_framework.authtoken.views import ObtainAuthToken
 from rest_framework.compat import coreapi, coreschema
 from rest_framework.schemas import coreapi as coreapi_schema
 from rest_framework.schemas import ManualSchema
-from .serializers import EventSerializer, OrganizationSerializer, CustomAuthTokenSerializer, BestStudentSerializer, \
-    PracticeSerializer, InternshipSerializer, WorkSerializer, AchievementsSerializer
+from .serializers import EventSerializer, OrganizationSerializer, CustomAuthTokenSerializer, BestStudentSerializer, AchievementsSerializer
 from rest_framework.generics import (ListCreateAPIView,RetrieveUpdateDestroyAPIView,)
 from rest_framework.permissions import IsAuthenticated
-from .models import Event, Organization, userProfile, BestStudent, Practice, Internship, Work, Achievements
+from .models import Event, Organization, userProfile, BestStudent, Achievements
 from .permissions import IsOwnerProfileOrReadOnly
 from .serializers import UserProfileSerializer
 
@@ -20,18 +19,6 @@ class EventViewSet(viewsets.ModelViewSet):
 class BestStudentViewSet(viewsets.ModelViewSet):
     queryset = BestStudent.objects.all()
     serializer_class = BestStudentSerializer
-
-class PracticeViewSet(viewsets.ModelViewSet):
-    queryset = Practice.objects.all()
-    serializer_class = PracticeSerializer
-
-class InternshipViewSet(viewsets.ModelViewSet):
-    queryset = Internship.objects.all()
-    serializer_class = InternshipSerializer
-
-class WorkViewSet(viewsets.ModelViewSet):
-    queryset = Work.objects.all()
-    serializer_class = WorkSerializer
 
 class AchievementsViewSet(viewsets.ModelViewSet):
     queryset = Achievements.objects.all()
