@@ -55,8 +55,8 @@ class userProfile(AbstractUser):
     objects = CustomUserManager()
 
     class Meta:
-        verbose_name = 'Пользователь'
-        verbose_name_plural = 'Пользователи'
+        verbose_name = 'Авторизированный'
+        verbose_name_plural = 'Авторизированные'
 
     def __str__(self):
         return self.full_name
@@ -74,6 +74,23 @@ class Event(models.Model):
 
     def __str__(self):
         return self.organizer
+
+class User(models.Model):
+    class RoleChoices(models.TextChoices):
+        PARENT = 'parent', 'Родитель'
+        ENROLLEE = 'enrollee', 'Абитуриент'
+
+    status = models.CharField('Статус', max_length=12, choices=RoleChoices.choices)
+    name = models.CharField("Фио", max_length=60)
+    email = models.CharField('email' ,unique=True, max_length=40)
+    number = models.IntegerField('Номер', blank=True, null=True)
+
+    class Meta:
+        verbose_name = 'Пользователь'
+        verbose_name_plural = 'Пользователи'
+
+    def __str__(self):
+        return self.name
 
 class Achievements(models.Model):
     text = models.TextField("Текст")
@@ -96,6 +113,28 @@ class BestStudent(models.Model):
         verbose_name_plural = 'Лучшие студенты'
     def __str__(self):
         return self.name
+
+class Photo(models.Model):
+    class CategoryChoices(models.TextChoices):
+        WEEKDAYS = 'weekdays', 'Будни студента'
+        CAMPUS = 'campus', 'Кампус ДВФУ'
+        EVENTS = 'events', 'Студенческие события'
+        PREMISES = 'premises', 'Учебные помещения'
+        LIBRARY = 'library', 'Библиотека'
+        CREATIVE_CENTER = 'creative_center', 'Творческий центр'
+        SPORT_LIFE = 'sport_life', 'Спортивная жизнь студентов'
+        LABORATORIES = 'laboratories', 'Лаборатории'
+        CENTER_NTI = 'center_nti', 'Центр НТИ'
+        INTERNATIONAL_ACTIVITY = 'international_activity', 'Международная деятельность'
+    category = models.CharField('Категория', max_length=30, choices=CategoryChoices.choices)
+    img = models.ImageField('Фото',blank=True, null=True, upload_to=f'gallery')
+    title = models.TextField('Описание',blank=True,null=True)
+    class Meta:
+        verbose_name = 'Фотография'
+        verbose_name_plural = 'Фотографии'
+    def __str__(self):
+        return self.title[:30]
+
 
 class Organization(models.Model):
     name = models.CharField('Название направления', max_length=200, unique=True)

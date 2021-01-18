@@ -3,10 +3,11 @@ from rest_framework.authtoken.views import ObtainAuthToken
 from rest_framework.compat import coreapi, coreschema
 from rest_framework.schemas import coreapi as coreapi_schema
 from rest_framework.schemas import ManualSchema
-from .serializers import EventSerializer, OrganizationSerializer, CustomAuthTokenSerializer, BestStudentSerializer, AchievementsSerializer
+from .serializers import EventSerializer, OrganizationSerializer, CustomAuthTokenSerializer, BestStudentSerializer, \
+    AchievementsSerializer, PhotoSerializer, UserSerializer
 from rest_framework.generics import (ListCreateAPIView,RetrieveUpdateDestroyAPIView,)
 from rest_framework.permissions import IsAuthenticated
-from .models import Event, Organization, userProfile, BestStudent, Achievements
+from .models import Event, Organization, userProfile, BestStudent, Achievements, Photo, User
 from .permissions import IsOwnerProfileOrReadOnly
 from .serializers import UserProfileSerializer
 
@@ -27,6 +28,14 @@ class AchievementsViewSet(viewsets.ModelViewSet):
 class OrganizationViewSet(viewsets.ModelViewSet):
     queryset = Organization.objects.all()
     serializer_class = OrganizationSerializer
+
+class PhotoViewSet(viewsets.ModelViewSet):
+    queryset = Photo.objects.all()
+    serializer_class = PhotoSerializer
+
+class UserViewSet(viewsets.ModelViewSet):
+    queryset = User.objects.all()
+    serializer_class = UserSerializer
 
 
 class UserProfileListCreateView(ListCreateAPIView):

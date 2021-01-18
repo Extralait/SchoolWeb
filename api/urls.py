@@ -1,7 +1,8 @@
 from django.contrib import admin
 from django.urls import path, include
 from rest_framework import routers
-from .views import EventViewSet, OrganizationViewSet, CustomAuthToken, BestStudentViewSet,AchievementsViewSet
+from .views import EventViewSet, OrganizationViewSet, CustomAuthToken, BestStudentViewSet, AchievementsViewSet, \
+    PhotoViewSet, UserViewSet
 from django.urls import include, path
 from .views import UserProfileListCreateView, userProfileDetailView
 
@@ -10,6 +11,8 @@ router.register(r'events', EventViewSet,basename='event')
 router.register(r'organisations', OrganizationViewSet,basename='organisation')
 router.register(r'beststudents', BestStudentViewSet,basename='beststudent')
 router.register(r'achievements', AchievementsViewSet,basename='achievements')
+router.register(r'photo', PhotoViewSet,basename='photo')
+router.register(r'user', UserViewSet,basename='user')
 
 
 urlpatterns = [

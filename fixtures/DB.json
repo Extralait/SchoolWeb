@@ -796,7 +796,7 @@
     "pk": 25,
     "fields": {
       "name": "Международное ресторанное дело",
-      "school": "Школа экономики и менеджмента",
+      "school": "Школа биомедицины",
       "number": "19.03.04",
       "place": 0,
       "price": null,
@@ -2370,7 +2370,7 @@
       },
       "logo":"org_logo/70.png",
       "event": null,
-      "best_students": [1,2,3],
+      "best_students": [],
       "offer": [1,2,3,45],
       "video_link": "",
       "plan": ""

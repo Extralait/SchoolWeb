@@ -3,17 +3,15 @@ from rest_framework import serializers
 from rest_framework.authtoken.serializers import AuthTokenSerializer
 from django.utils.translation import gettext_lazy as _
 
-from .models import Event, Organization, userProfile, BestStudent, Achievements
+from .models import Event, Organization, userProfile, BestStudent, Achievements, Photo, User
 
 
 class Base64ImageField(serializers.ImageField):
     """
     A Django REST framework field for handling image-uploads through raw post data.
     It uses base64 for encoding and decoding the contents of the file.
-
     Heavily based on
     https://github.com/tomchristie/django-rest-framework/pull/1268
-
     Updated for Django REST framework 3.
     """
 
@@ -74,6 +72,16 @@ class EventSerializer(serializers.ModelSerializer):
 class BestStudentSerializer(serializers.ModelSerializer):
     class Meta:
         model = BestStudent
+        fields = '__all__'
+
+class UserSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = User
+        fields = '__all__'
+
+class PhotoSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Photo
         fields = '__all__'
 
 class OrganizationSerializer(serializers.ModelSerializer):
