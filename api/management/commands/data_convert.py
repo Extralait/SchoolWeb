@@ -68,7 +68,7 @@ class Command(BaseCommand):
             'Педагогическое образование (с двумя профилями подготовки) (Иностранный (английский)  язык и иностранный (корейский) язык)': 5,
             'Педагогическое образование (с двумя профилями подготовки) (История и обществознание)': 4,
             'Педагогическое образование (с двумя профилями подготовки) (Начальное образование и профиль по выбору (логопедия, английский язык, информатика)': 45,
-            'Филология (иностранные языки)': 2,
+            'Филология (иностранный язык)': 2,
             'Филология (русский язык)': 69,
             'Лингвистика': 68,
             'Фундаментальная и прикладная лингвистика': 67,
@@ -90,16 +90,19 @@ class Command(BaseCommand):
             pk = int(line[1]['pk'])
             name = line[1]['Специальность'].strip().replace('\n',' ')
             school = line[1]['Школа'].strip()
+            print(school)
             number = line[1]['Код специальности'].strip()
-            place = int(line[1]['Количество бюджетных мест']) if line[1]['Количество бюджетных мест'].isdigit() else 0
-            price = int(line[1]['Стоимость обучения']) if line[1]['Стоимость обучения'].isdigit() else 0
+            place = int(line[1]['Количество бюджетных мест']) if line[1]['Количество бюджетных мест'] else 0
+            price = int(line[1]['Стоимость обучения']) if line[1]['Стоимость обучения'] else 0
 
             subjects = []
             if line[1]['Предметы']:
                 subjects_names_list = [i.strip().replace('\n',' ') for i in line[1]['Предметы'].strip().split(',')]
-                print(subjects_names_list)
+                # print(name, subjects_names_list)
                 subjects_scores_list = [i.strip() for i in line[1]['Минимальные баллы'].strip().split(',')]
                 subjects_scores_list = [int(re.search(r'\d+', s).group()) for s in subjects_scores_list]
+                # print(name, subjects_names_list,subjects_scores_list)
+
                 for i in range(len(subjects_scores_list)):
                     subjects.append({'name': subjects_names_list[i],
                                      'score': subjects_scores_list[i]})
@@ -107,23 +110,29 @@ class Command(BaseCommand):
             work = []
             work_names_list = [i.strip() for i in line[1]['Трудоустройство'].strip().split('$') if i]
             work_description_list = [i.strip() for i in line[1]['Описание трудоустройства'].strip().split('$') if i]
-            for i in range(len(work_description_list)):
-                work.append({'name': work_names_list[i],
-                             'score': work_description_list[i]})
+            for i in range(len(work_names_list)):
+                try:
+                    work.append({'name': work_names_list[i],
+                                 'score': work_description_list[i]})
+                except IndexError:break
 
             practice = []
             practice_names_list = [i.strip() for i in line[1]['Практика'].strip().split('$') if i]
             practice_description_list = [i.strip() for i in line[1]['Описание практики'].strip().split('$') if i]
-            for i in range(len(practice_description_list)):
-                practice.append({'name': practice_names_list[i],
-                                 'score': practice_description_list[i]})
+            for i in range(len(practice_names_list)):
+                try:
+                    practice.append({'name': practice_names_list[i],
+                                     'score': practice_description_list[i]})
+                except IndexError:break
 
             internship = []
             internship_names_list = [i.strip() for i in line[1]['Стажировка'].strip().split('$') if i]
             internship_description_list = [i.strip() for i in line[1]['Описание стажировки'].strip().split('$') if i]
-            for i in range(len(internship_description_list)):
-                internship.append({'name': internship_names_list[i],
-                                   'score': internship_description_list[i]})
+            for i in range(len(internship_names_list)):
+                try:
+                    internship.append({'name': internship_names_list[i],
+                                       'score': internship_description_list[i]})
+                except IndexError:break
 
             passing_scores = [0] * 5
             passing_scores_str_list = line[1]['Проходные баллы прошлых лет'].split(',')
