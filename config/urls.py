@@ -14,3 +14,6 @@ urlpatterns = [
     # path to our account's app endpoints
     path("api/", include("api.urls"))
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+urlpatterns += [
+    path('api-auth/', include('rest_framework.urls')),
+]

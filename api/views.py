@@ -10,26 +10,32 @@ from rest_framework.permissions import IsAuthenticated
 from .models import Event, Organization, userProfile, BestStudent, Achievements, Photo, User
 from .permissions import IsOwnerProfileOrReadOnly
 from .serializers import UserProfileSerializer
+from rest_framework import permissions
 
 
 class EventViewSet(viewsets.ModelViewSet):
+    permission_classes = [permissions.IsAuthenticatedOrReadOnly]
     queryset = Event.objects.all()
     serializer_class = EventSerializer
 
 
 class BestStudentViewSet(viewsets.ModelViewSet):
+    permission_classes = [permissions.IsAuthenticatedOrReadOnly]
     queryset = BestStudent.objects.all()
     serializer_class = BestStudentSerializer
 
 class AchievementsViewSet(viewsets.ModelViewSet):
+    permission_classes = [permissions.IsAuthenticatedOrReadOnly]
     queryset = Achievements.objects.all()
     serializer_class = AchievementsSerializer
 
 class OrganizationViewSet(viewsets.ModelViewSet):
+    permission_classes = [permissions.IsAuthenticatedOrReadOnly]
     queryset = Organization.objects.all()
     serializer_class = OrganizationSerializer
 
 class PhotoViewSet(viewsets.ModelViewSet):
+    permission_classes = [permissions.IsAuthenticatedOrReadOnly]
     queryset = Photo.objects.all()
     serializer_class = PhotoSerializer
 
@@ -39,9 +45,9 @@ class UserViewSet(viewsets.ModelViewSet):
 
 
 class UserProfileListCreateView(ListCreateAPIView):
+    permission_classes = [permissions.IsAuthenticatedOrReadOnly]
     queryset=userProfile.objects.all()
     serializer_class=UserProfileSerializer
-    permission_classes=[IsAuthenticated]
 
     def perform_create(self, serializer):
         user=self.request.user
@@ -49,11 +55,12 @@ class UserProfileListCreateView(ListCreateAPIView):
 
 
 class userProfileDetailView(RetrieveUpdateDestroyAPIView):
+    permission_classes = [permissions.IsAuthenticatedOrReadOnly]
     queryset=userProfile.objects.all()
     serializer_class=UserProfileSerializer
-    permission_classes=[IsOwnerProfileOrReadOnly,IsAuthenticated]
 
 class CustomAuthToken(ObtainAuthToken):
+    permission_classes = [permissions.IsAuthenticatedOrReadOnly]
     serializer_class = CustomAuthTokenSerializer
 
     if coreapi_schema.is_enabled():

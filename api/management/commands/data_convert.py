@@ -78,7 +78,8 @@ class Command(BaseCommand):
             'Теология': 3,
             'Физическая культура': 70,
             'Дизайн': 64,
-            'Востоковедение и африканистика': 63
+            'Востоковедение и африканистика': 63,
+            'География':39
         }
 
         data = pd.read_csv('data_dir/data.csv', sep=';', encoding='utf-8')
@@ -88,12 +89,12 @@ class Command(BaseCommand):
 
         for line in data.iterrows():
             pk = int(line[1]['pk'])
-            name = line[1]['Специальность'].strip().replace('\n',' ')
+            name = line[1]['Специальность'].strip().replace('\n',' ').capitalize()
             school = line[1]['Школа'].strip()
             print(school)
             number = line[1]['Код специальности'].strip()
-            place = int(line[1]['Количество бюджетных мест']) if line[1]['Количество бюджетных мест'] else 0
-            price = int(line[1]['Стоимость обучения']) if line[1]['Стоимость обучения'] else 0
+            place = int(line[1]['Количество бюджетных мест']) if str(line[1]['Количество бюджетных мест']).isdigit() else 0
+            price = int(line[1]['Стоимость обучения']) if str(line[1]['Стоимость обучения']).isdigit() else 0
 
             subjects = []
             if line[1]['Предметы']:
@@ -138,8 +139,8 @@ class Command(BaseCommand):
             passing_scores_str_list = line[1]['Проходные баллы прошлых лет'].split(',')
             if len(passing_scores_str_list) == 5:
                 for i in range(5):
-                    passing_scores[i] = int(passing_scores_str_list[i])
-
+                    passing_scores[i] = int(passing_scores_str_list[i].strip()) if str(passing_scores_str_list[i]).strip().isdigit() else 0
+            print(passing_scores)
             main_disciplines = [i.strip() for i in line[1]['Ключевые дисциплины'].split('$') if i]
             other = line[1]['Дополнительные возможности'].strip()
 
